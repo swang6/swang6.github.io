@@ -1,5 +1,107 @@
-<html>
-    <body>
-        <h1>Blackjack</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #2d3436;
+        }
+        .game-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .bankroll, .bet {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .card {
+            display: inline-block;
+            font-size: 2rem;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            text-align: center;
+            width: 60px;
+            height: 90px;
+            background-color: white;
+        }
+        .controls, .bet-controls, .game-controls {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+        }
+        .button:disabled {
+            background-color: #bdc3c7;
+        }
+        .dealer-hand, .player-hand {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .card-row {
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .button {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="bankroll">Bankroll: $<span id="bankroll">100</span></div>
+        <div class="bet">Bet: $<span id="current-bet">0</span></div>
+
+        <div class="dealer-hand card-row">
+            <div id="dealer-cards"></div>
+        </div>
+
+        <hr>
+
+        <div class="player-hand card-row">
+            <div id="player-cards"></div>
+        </div>
+
+        <div class="bet-controls">
+            <button class="button" id="bet-1">$1</button>
+            <button class="button" id="clear-bet">Clear Bet</button>
+            <button class="button" id="deal" disabled>Deal</button>
+        </div>
+
+        <div class="game-controls">
+            <button class="button" id="hit" disabled>Hit</button>
+            <button class="button" id="stand" disabled>Stand</button>
+            <button class="button" id="double" disabled>Double Down</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
