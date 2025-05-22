@@ -1,13 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>World Flags and Body Bags</title>
-
+  <meta charset="UTF-8">
+  <title>World Flags and Body Bags</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0 20px 40px;
+    }
+    h1 {
+      text-align: center;
+      margin: 80px 0 10px;
+      font-size: 32px;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 0;
+      z-index: 999;
+      font-size: 14px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    iframe {
+      display: block;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 900px;
+      height: 500px;
+      border: none;
+    }
+    .bar-list {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+    .bar {
+      background: #fff;
+      margin-bottom: 15px;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .bar-name {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .bar-desc {
+      font-size: 14px;
+      color: #555;
+    }
+    .anchor {
+      display: block;
+      position: relative;
+      top: -70px;
+      visibility: hidden;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <h1>World Flags and Body Bags</h1>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1T8xgfEmgwMzBjbHSbTUeuYKjmak0KeI&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-    </div>
+
+<nav>
+  <a href="#top">Top</a>
+  <a href="#map">Map</a>
+  <a href="#list">Bar List</a>
+</nav>
+
+<span class="anchor" id="top"></span>
+<h1>World Flags and Body Bags</h1>
+
+<span class="anchor" id="map"></span>
+<iframe src="https://www.google.com/maps/d/embed?mid=1T8xgfEmgwMzBjbHSbTUeuYKjmak0KeI&ehbc=2E312F&noprof=1" allowfullscreen></iframe>
+
+<span class="anchor" id="list"></span>
+<ul class="bar-list">
+  <li class="bar"><div class="bar-name">🇰🇷 (Korea) Dokebi Bar & Grill – 199 Grand St</div><div class="bar-desc">Lively Korean BBQ-bar slinging soju cocktails and street-food bites in a hip, pub-style space.</div></li>
+  <li class="bar"><div class="bar-name">🇨🇦 (Canada) Ontario Bar – 559 Grand St</div><div class="bar-desc">Canadian dive bar serving Moosehead, Labatt, and air hockey in a no-frills setting.</div></li>
+  <li class="bar"><div class="bar-name">🇮🇪 (Ireland) Iona Bar – 180 Grand St</div><div class="bar-desc">Classic Irish/Scottish pub with pints, whiskies, and live Celtic music in the back garden.</div></li>
+  <li class="bar"><div class="bar-name">🇫🇷 (France) Maison Premiere – 298 Bedford Ave</div><div class="bar-desc">Belle-Époque absinthe and oyster bar modeled on Paris cafés and New Orleans’ Old Absinthe House.</div></li>
+  <li class="bar"><div class="bar-name">🇹🇭 (Thailand) SEA Thai – 114 N 6th St</div><div class="bar-desc">Lotus-pond centerpiece, Thai basil martinis, and Bangkok-night-market energy in a walk-in-friendly lounge.</div></li>
+  <li class="bar"><div class="bar-name">🇲🇽 (Mexico) 320 Club – 320 Bedford Ave</div><div class="bar-desc">Tiny mezcal-forward speakeasy hidden past the burrito counter; great for agave flights.</div></li>
+  <li class="bar"><div class="bar-name">🇦🇺 (Australia) Isla & Co. – 107 N 12th St</div><div class="bar-desc">Casual Australian café-bar offering flat whites by day and Aussie wine spritzes by night.</div></li>
+  <li class="bar"><div class="bar-name">🇯🇲 (Jamaica) Kokomo – 65 Kent Ave</div><div class="bar-desc">Colorful island lounge serving jerk plates and rum punches to reggae and soca beats.</div></li>
+  <li class="bar"><div class="bar-name">🇩🇪 (Germany) Spritzenhaus 33 – 33 Nassau Ave</div><div class="bar-desc">Massive German beer hall with 25+ taps, foosball, and communal tables ideal for groups.</div></li>
+  <li class="bar"><div class="bar-name">🇮🇹 (Italy) Bar Americano – 180 Franklin St</div><div class="bar-desc">Intimate aperitivo bar pouring Negronis and Euro-leaning cocktails with classic Italian snacks.</div></li>
+  <li class="bar"><div class="bar-name">🇵🇱 (Poland) Karczma – 136 Greenpoint Ave</div><div class="bar-desc">Rustic Polish tavern with folk-costumed staff, Żywiec on draft, and hearty pierogi.</div></li>
+  <li class="bar"><div class="bar-name">🇬🇷 (Greece) Mr. Melo – 61 Withers St</div><div class="bar-desc">Vinyl-listening cocktail bar serving Greek meze and Hellenic-inspired drinks.</div></li>
+  <li class="bar"><div class="bar-name">🇧🇷 (Brazil) Beco – 45 Richardson St</div><div class="bar-desc">Cozy São Paulo-style botequim famed for caipirinhas, pão de queijo, and samba playlists.</div></li>
+  <li class="bar"><div class="bar-name">🇲🇦 (Morocco) Café Mogador – 133 Wythe Ave</div><div class="bar-desc">Lantern-lit café mixing mint-tea cocktails and Marrakech tagines for a mellow Maghreb nightcap.</div></li>
+  <li class="bar"><div class="bar-name">🇵🇪 (Peru) Llama Inn – 50 Withers St</div><div class="bar-desc">Modern Peruvian spot with rooftop pisco sours and shareable ceviche.</div></li>
+  <li class="bar"><div class="bar-name">🇯🇵 (Japan) Bozu – 296 Grand St</div><div class="bar-desc">Laid-back Tokyo-style izakaya pouring sake flights and sushi “bombs” (closing June 2025 — last chance visit!).</div></li>
+  <li class="bar"><div class="bar-name">🇸🇪 (Sweden) Tørst – 615 Manhattan Ave</div><div class="bar-desc">Scandinavian minimalist beer bar with Nordic imports and craft brews in a sleek, wood-accented space.</div></li>
+  <li class="bar"><div class="bar-name">🇺🇸 (USA) Desert 5 Spot – 94 Wythe Ave</div><div class="bar-desc">Western-themed honky-tonk with live country music, line dancing, and a mechanical bull in a Dolly Parton-style lounge.</div></li>
+</ul>
+
 </body>
 </html>
