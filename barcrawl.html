@@ -9,28 +9,30 @@
     }
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      background: #f0f2f5;
       margin: 0;
       padding: 0 20px 40px;
     }
     h1 {
       text-align: center;
-      margin: 80px 0 10px;
-      font-size: 32px;
+      margin: 100px 0 20px;
+      font-size: 36px;
+      color: #222;
     }
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      background: #333;
+      background: #222;
       color: white;
       display: flex;
       justify-content: center;
-      gap: 25px;
-      padding: 12px 0;
+      gap: 30px;
+      padding: 16px 0;
       z-index: 999;
-      font-size: 14px;
+      font-size: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
     nav a {
       color: white;
@@ -38,11 +40,12 @@
     }
     iframe {
       display: block;
-      margin: 20px auto;
+      margin: 30px auto;
       width: 100%;
       max-width: 900px;
       height: 500px;
       border: none;
+      border-radius: 8px;
     }
     .bar-list {
       max-width: 900px;
@@ -51,15 +54,15 @@
       list-style: none;
     }
     .bar {
-      background: #fff;
+      background: white;
       margin-bottom: 15px;
       padding: 16px;
       border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .bar-name {
       font-weight: bold;
-      font-size: 16px;
+      font-size: 17px;
       margin-bottom: 6px;
     }
     .bar-desc {
@@ -69,8 +72,27 @@
     .anchor {
       display: block;
       position: relative;
-      top: -70px;
+      top: -80px;
       visibility: hidden;
+    }
+    .map-link {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .map-link a {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #007bff;
+      color: white;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+      transition: background 0.2s;
+    }
+    .map-link a:hover {
+      background: #0056b3;
     }
   </style>
 </head>
@@ -84,6 +106,10 @@
 
 <span class="anchor" id="top"></span>
 <h1>World Flags and Body Bags</h1>
+
+<div class="map-link">
+  <a href="https://maps.app.goo.gl/2E2VmkbkhQUXnBVF8?g_st=ic" target="_blank">Open Full Map in Google Maps</a>
+</div>
 
 <span class="anchor" id="map"></span>
 <iframe src="https://www.google.com/maps/d/embed?mid=1T8xgfEmgwMzBjbHSbTUeuYKjmak0KeI&ehbc=2E312F&noprof=1" allowfullscreen></iframe>
